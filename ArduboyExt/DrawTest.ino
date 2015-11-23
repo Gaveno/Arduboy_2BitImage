@@ -433,7 +433,7 @@ void loop() {
     if (off > 8)
       off = 0;
 
-    uint8_t offU = (uint8_t)off;
+    /*uint8_t offU = (uint8_t)off;
     for (int a = 0; a < 16; a++)
     {
         for (int b = 0; b < 8; b++)
@@ -444,10 +444,10 @@ void loop() {
           display.drawPixel((a * 8) + 6 + display.gray, (b * 8) + 4 - offU, 0);
           display.drawPixel((a * 8) + 2 - display.gray, (b * 8) + 2 - offU, 0);
         }
-    }
+    }*/
 
     
-    display.draw2Bitmap(0,16, Tree);
+    //display.draw2Bitmap(0,16, Tree);
     display.draw2Bitmap(50,32,girl[(uint8_t)off/2]);
     drawCharacter(tX, tY, moved);
     
